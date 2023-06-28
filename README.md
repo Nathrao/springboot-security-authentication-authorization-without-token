@@ -11,7 +11,7 @@ CREATE TABLE if not exists public.user
 	role character varying,
 	password character varying
 );
-#User creation payload
+# User creation payload
 Http: post 
 URL: http://localhost:8080/user/register
 Request 1: 
@@ -32,10 +32,10 @@ Request 2:
 # Verify above recored added into db
 select * from public.user
 
-#launch url in browser
-#Test below API should be accessed using admin login
+# launch url in browser
+# Test below API should be accessed using admin login
 	http://localhost:8080/product/name/star
 	http://localhost:8080/product/id/1
-#Test below API should be accessed using iperations login
+# Test below API should be accessed using iperations login
 	http://localhost:8080/product/code/97dfdfd99
 	http://localhost:8080/product/id/1
