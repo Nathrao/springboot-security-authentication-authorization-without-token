@@ -31,3 +31,11 @@ Request 2:
 }
 # Verify above recored added into db
 select * from public.user
+
+#launch url in browser
+#Test below API should be accessed using admin login
+	http://localhost:8080/product/name/star
+	http://localhost:8080/product/id/1
+#Test below API should be accessed using iperations login
+	http://localhost:8080/product/code/97dfdfd99
+	http://localhost:8080/product/id/1
