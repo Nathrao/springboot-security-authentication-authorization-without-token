@@ -1,6 +1,6 @@
 # springboot-security-authentication-authorization-without-token
 
-#script required to run for db;
+# script required to run for db
 drop table public.user;
 CREATE TABLE if not exists public.user
 (
@@ -11,7 +11,8 @@ CREATE TABLE if not exists public.user
 	role character varying,
 	password character varying
 );
-# User creation payload
+
+# User creation payload for postman
 Http: post 
 URL: http://localhost:8080/user/register
 Request 1: 
@@ -32,10 +33,10 @@ Request 2:
 # Verify above recored added into db
 select * from public.user
 
-# launch url in browser
+# Launch URL directly in browser
 # Test below API should be accessed using admin login
 	http://localhost:8080/product/name/star
 	http://localhost:8080/product/id/1
-# Test below API should be accessed using iperations login
+# Test below API should be accessed using operations login
 	http://localhost:8080/product/code/97dfdfd99
 	http://localhost:8080/product/id/1
