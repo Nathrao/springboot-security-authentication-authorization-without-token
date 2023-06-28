@@ -11,3 +11,21 @@ CREATE TABLE if not exists public.user
 	role character varying,
 	password character varying
 );
+#User creation payload
+Http: post 
+URL: http://localhost:8080/user/register
+Request 1: 
+{
+    "name": "nath2",
+    "role": "ROLE_OPERATIONS",
+    "email": "nath2@yopmail.com",
+    "password": "dev"
+}
+
+Request 2: 
+{
+    "name": "nath1",
+    "role": "ROLE_ADMIN",
+    "email": "nath1@yopmail.com",
+    "password": "dev"
+}
