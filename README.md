@@ -29,3 +29,5 @@ Request 2:
     "email": "nath1@yopmail.com",
     "password": "dev"
 }
+# Verify above recored added into db
+select * from public.user
