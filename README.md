@@ -1,5 +1,5 @@
 # springboot-security-authentication-authorization-without-token
-
+# JDK 17 required
 # script required to run for db
 	
 	# drop table public.user;
